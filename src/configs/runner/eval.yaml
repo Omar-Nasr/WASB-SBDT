@@ -1,8 +1,8 @@
 name: eval
 device: cuda
 gpus: [0]
-vis_result: False
-vis_hm: False
+vis_result: True
+vis_hm: True 
 vis_traj: False
 #best_model_name: best_model.pth.tar
 #model_dir: 
