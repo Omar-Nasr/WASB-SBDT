@@ -3,7 +3,7 @@ device: cuda
 gpus: [0]
 vis_result: True
 vis_hm: True 
-vis_traj: False
+vis_traj: True
 #best_model_name: best_model.pth.tar
 #model_dir: 
 model_path: 
