@@ -42,7 +42,8 @@ def gen_video(video_path,
 
     for fname in tqdm(fnames):
         im_path = osp.join(vis_dir, fname)
+        print(im_path)
         im      = cv2.imread(im_path)
-        im = cv2.resize(im, None, fx=resize, fy=resize)
+        # im = cv2.resize(im, None, fx=resize, fy=resize)
         out.write(im)
 
