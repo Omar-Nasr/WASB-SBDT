@@ -111,6 +111,8 @@ def inference_video(detector,
                 y_pred = result_dict[img_path2]['y']
                 visi_pred  = result_dict[img_path2]['visi']
                 score_pred = result_dict[img_path2]['score']
+                with open("/kaggle/working/results.csv","a") as f:
+                    f.write(f"{img_path2},{x_pred},{y_pred},{visi_pred},{score_pred}\n")
                 
                 center_gt = gt[img_path2]
 
