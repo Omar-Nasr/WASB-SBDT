@@ -14,9 +14,7 @@ train:
   num_clip_ratio: 1.0
   refine_npz_path: 
 test:
-  matches: [ 'game8', 
-             'game9', 
-             'game10']
+  matches: ['game10']
   num_clip_ratio: 1.0
   refine_npz_path:
 
