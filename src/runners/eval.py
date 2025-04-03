@@ -51,6 +51,7 @@ def inference_video(detector,
     rescale     = -1.
     num_frames = 0
     for batch_idx, (imgs, hms, trans, xys_gt, visis_gt, img_paths) in enumerate(tqdm(dataloader, desc='[(CLIP-WISE INFERENCE)]' )):
+        print(img_paths)
 
         num_frames += imgs.shape[0] * frames_in
         if rescale < 0:
