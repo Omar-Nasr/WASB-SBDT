@@ -61,7 +61,9 @@ def inference_video(detector,
         img_paths   = [list(in_tuple) for in_tuple in img_paths]
 
         for ib in batch_results.keys():
+            print(ib)
             for ie in batch_results[ib].keys():
+                print(ie)
                 img_path    = img_paths[ie][ib]
                 preds       = batch_results[ib][ie]
                 det_results[img_path].extend(preds)
