@@ -81,7 +81,7 @@ def inference_video(detector,
     fp1_im_list = []
     cnt = 0
     for cnt, img_path in enumerate(result_dict.keys()):
-        print(img_path)
+        # print(img_path)
         if(img_path.startswith("/kaggle/working/WASB-SBDT/datasets/tennis/game10/Clip1/")):
             with open("/kaggle/working/results.csv","a") as f:
                 x_pred = result_dict[img_path]['x']
